@@ -834,7 +834,31 @@ footer {
     background: url("../img/clear.png") 0 0 no-repeat;
     background-size: contain;
 }
-
+.ddtitle{
+    margin-top: 30px !important;
+}
+@media (max-height: 800px) {
+    .lottery-content{
+        height: 3rem;
+    }
+    .ddtitle{
+        margin-top: 8px !important;
+    }
+    .lottery-avatar{
+        width: 60px;
+        height: 60px;
+    }
+    .lottery-avatar img{
+        width: 60px;
+        height: 60px;
+    }
+    .lottery-content{
+        width: 56%;
+    }
+    .main{
+        height: 91%;
+    }
+}
 
 
 
