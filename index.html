@@ -8,12 +8,14 @@
 </head>
 <body>
 <!-- 顶部中国风花纹 start -->
-<header class="top-head"></header>
+<!-- <header class="top-head"></header> -->
 
 <!--左侧中奖名单展示-->
 <aside class="aside-left">
     <div class="aside-main" id="mingdan-con">
-        <div class="btn btn-red-outline" data-toggle="modal" id="mingdan-title">中奖名单</div>
+        <div class="btn-red-outline" data-toggle="modal" id="mingdan-title">
+            <img src="./img/zj.png" style="width: 100%;">
+        </div>
         <div class="award-main">
             <div id="award-123">
                 <div class="award-con" id="award-01">
@@ -41,7 +43,10 @@
 <!--右侧奖品名单展示-->
 <aside class="aside-right">
     <div class="aside-main" id="liwu-con">
-        <div class="btn btn-red-outline" data-toggle="modal" id="liwu-title">新年礼物</div>
+        <div class="btn-red-outline" data-toggle="modal" id="liwu-title">
+            <!-- 新年礼物 -->
+            <img src="./img/cj.png" style="width: 100%;">
+        </div>
         <div class="award-main">
             <div class="award-con">
                 <h3 class="award-title">一等奖</h3>
@@ -183,7 +188,7 @@
 <canvas class="snow-canvas" speed="2" interaction="true" size="10" count="30" start-color="rgba(253,252,251,1)" end-color="rgba(251,252,253,0.3)" opacity="0.00001" wind-power="2" image="false" width="1366" height="667"></canvas>
 <canvas class="snow-canvas" speed="3" interaction="true" size="12" count="80" wind-power="-5" image="./img/snow.png" width="1366" height="667"></canvas>
 
-<footer class="footer"></footer>
+<!-- <footer class="footer"></footer> -->
 
 <!-- 新年祝福框模板 start -->
 <script type="text/template" id="lotterycon-tpl">
@@ -477,13 +482,13 @@
 //        $('#lottery-wrap').css('top', -stop_top);
 
         // 停止动画时要走的距离，即再走三个索引（即两个框+半个框的距离）
-        var left_distance = Math.floor(item_outer_height*2 + (item_outer_height - item_height));
+        var left_distance = Math.floor(item_outer_height*1 + (item_outer_height - item_height));
         var sure_index = stop_index + 4;
 
         // 移动到要到达的指定位置
         var lastStep = function() {
             time02 = nextFrame(function() {
-                top -= 8;
+                top -= 2;
                 moveDom.style.top = (-stop_top + top) + 'px';
                 if (-top <= left_distance) {
                     lastStep();
@@ -580,7 +585,7 @@
 //            isMove = true;
 //            lottery_btn.text('开始抽奖');
 //            lottery_btn.css('background', 'none');
-        }, 4200);
+        }, 2200);
 
     }
 
