@@ -693,14 +693,14 @@
         });
 
         // 控制：显示/隐藏 抽奖名单和抽奖奖品显示
-        if (local_handle.get("mingdan_toggle") == 0) {
+        if (local_handle.get("mingdan_toggle") == 1) {
             $('#mingdan-con').slideDown();
             $('#mingdan').hide();
         } else {
             $('#mingdan-con').hide();
             $('#mingdan').show();
         }
-        if (local_handle.get("liwu_toggle") == 0) {
+        if (local_handle.get("liwu_toggle") == 1) {
             $('#liwu-con').slideDown();
             $('#liwu').hide();
         } else {
