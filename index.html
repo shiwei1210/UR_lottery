@@ -427,21 +427,21 @@
 
         setout_time = setTimeout(function () {
             speed = 30;
-        }, 1500);
+        }, 2000);
 
         setout_time = setTimeout(function () {
             speed = 40;
-        }, 2000);
+        }, 3000);
         setout_time = setTimeout(function () {
             speed = 50;
-        }, 2500);
+        }, 4000);
         setout_time = setTimeout(function () {
-            speed = 80;
+            speed = 100;
             $('#lottery-btn').text('可抽奖啦 @_@');
             // 当速度达到最终的设置峰值是，isLock 将会解锁，此时，才可以停止动画
             isLock = false;
             clearTimeout(setout_time);
-        }, 3000);
+        }, 5000);
     }
 
     // 结束抽奖
