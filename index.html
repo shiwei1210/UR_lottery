@@ -176,11 +176,14 @@
 
         <!--抽奖按钮-->
         <div class="dashboard">
-            <div class="cirle-btn award" id="award-1" data-award="1">一</div>
-            <div class="cirle-btn award" id="award-2" data-award="2">二</div>
+            <div class="cirle-btn award" id="award-1" data-award="1">特</div>
+            <div class="cirle-btn award" id="award-2" data-award="2">一</div>
+            <div class="cirle-btn award" id="award-3" data-award="3">二</div>
+            <div class="cirle-btn award" id="award-4" data-award="4">三</div>
             <div class="btn btn-red-outline lottery-btn" id="lottery-btn" data-award="">开始抽奖</div>
-            <div class="cirle-btn award" id="award-3" data-award="3">三</div>
-            <div class="cirle-btn award" id="award-4" data-award="4">纪</div>
+            <div class="cirle-btn award" id="award-5" data-award="5">四</div>
+            <div class="cirle-btn award" id="award-6" data-award="6">五</div>
+            <div class="cirle-btn award" id="award-7" data-award="7">惊</div>
         </div>
     </div>
 </div>
@@ -423,25 +426,25 @@
 
         setout_time = setTimeout(function () {
             speed = 15;
-        }, 1000);
+        }, 100);
+
+        setout_time = setTimeout(function () {
+            speed = 20;
+        }, 200);
 
         setout_time = setTimeout(function () {
             speed = 30;
-        }, 2000);
-
+        }, 300);
         setout_time = setTimeout(function () {
             speed = 40;
-        }, 3000);
+        }, 400);
         setout_time = setTimeout(function () {
             speed = 50;
-        }, 4000);
-        setout_time = setTimeout(function () {
-            speed = 100;
-            $('#lottery-btn').text('可抽奖啦 @_@');
+            $('#lottery-btn').text('可抽奖啦');
             // 当速度达到最终的设置峰值是，isLock 将会解锁，此时，才可以停止动画
             isLock = false;
             clearTimeout(setout_time);
-        }, 5000);
+        }, 1000);
     }
 
     // 结束抽奖
@@ -488,8 +491,8 @@
         // 移动到要到达的指定位置
         var lastStep = function() {
             time02 = nextFrame(function() {
-                top -= 2;
-                moveDom.style.top = (-stop_top + top) + 'px';
+                // top -= 2;
+                // moveDom.style.top = (-stop_top + top) + 'px';
                 if (-top <= left_distance) {
                     lastStep();
                 } else {
@@ -585,7 +588,7 @@
 //            isMove = true;
 //            lottery_btn.text('开始抽奖');
 //            lottery_btn.css('background', 'none');
-        }, 2200);
+        }, 1000);
 
     }
 
@@ -611,9 +614,9 @@
             context.fillStyle = '#D9AD61';
             context.font = "bold 6rem STKaiti";
             if (name_zh.length <= 2) {
-                context.fillText(name_zh, 300, 1010);
+                context.fillText(name_zh, 300, 955);
             } else if (name_zh.length >= 3) {
-                context.fillText(name_zh, 280, 1000);
+                context.fillText(name_zh, 280, 960);
             }
         };
     }

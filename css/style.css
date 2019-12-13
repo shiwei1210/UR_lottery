@@ -170,10 +170,10 @@ aside .switch {
     border: 1px solid #FD361F;
 }
 .award-con .win .name {
-    line-height: 4rem;
+    line-height: 2.5rem;
     margin-left: 2rem;
     color: #000;
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-family: 'STKaiti', 'KaiTi ';
 }
 #liwu-con .win .name {
@@ -181,8 +181,8 @@ aside .switch {
     font-weight: bold;
 }
 .award-con .win .avatar img {
-    width: 4rem;
-    height: 4rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 100%;
 }
 #award-04 {
@@ -569,16 +569,28 @@ aside .switch {
     box-shadow: 0 5px rgba(253, 54, 31, 0.5);
 }
 .dashboard .cirle-btn:nth-child(1) {
-    left: 15%;
+    left: 5%;
 }
 .dashboard .cirle-btn:nth-child(2) {
-    left: 22%;
+    left: 15%;
+}
+.dashboard .cirle-btn:nth-child(3) {
+    left: 25%;
 }
 .dashboard .cirle-btn:nth-child(4) {
-    right: 22%;
+    left: 35%;
 }
 .dashboard .cirle-btn:nth-child(5) {
-    right: 15%;
+    left: 45%;
+}
+.dashboard .cirle-btn:nth-child(6) {
+    left: 60%;
+}
+.dashboard .cirle-btn:nth-child(7) {
+    left: 70%;
+}
+.dashboard .cirle-btn:nth-child(8) {
+    left: 80%;
 }
 .award-active {
     background: #ffbfb7;
