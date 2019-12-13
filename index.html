@@ -11,7 +11,7 @@
 <!-- <header class="top-head"></header> -->
 
 <!--左侧中奖名单展示-->
-<aside class="aside-left">
+<!-- <aside class="aside-left">
     <div class="aside-main" id="mingdan-con">
         <div class="btn-red-outline" data-toggle="modal" id="mingdan-title">
             <img src="./img/zj.png" style="width: 100%;">
@@ -39,12 +39,11 @@
         </div>
     </div>
     <img src="./img/lantern.png" alt="" width="85" id="mingdan" class="switch">
-</aside>
+</aside> -->
 <!--右侧奖品名单展示-->
-<aside class="aside-right">
+<!-- <aside class="aside-right">
     <div class="aside-main" id="liwu-con">
         <div class="btn-red-outline" data-toggle="modal" id="liwu-title">
-            <!-- 新年礼物 -->
             <img src="./img/cj.png" style="width: 100%;">
         </div>
         <div class="award-main">
@@ -137,7 +136,7 @@
         </div>
     </div>
     <img src="./img/lantern.png" alt="" width="85" id="liwu" class="switch">
-</aside>
+</aside> -->
 
 <!--倒计时展示-->
 <div class="stop-main">
@@ -158,18 +157,15 @@
 </div>
 
 <div class="main">
-    <div class="lotterty-infogo">
-        <img src="img/logo.png">
-    </div>
     <div id="lottery-main" class="lottery-main">
-        <div class="wrap-border-main">
+        <!-- <div class="wrap-border-main">
             <img src="./img/wrap-border-1.png" class="wrap-border wrap-border-1">
             <img src="./img/wrap-border-2.png" class="wrap-border wrap-border-2">
             <img src="./img/wrap-border-3.png" class="wrap-border wrap-border-3">
             <img src="./img/wrap-border-4.png" class="wrap-border wrap-border-4">
             <div class="wrap-border wrap-border-left"></div>
             <div class="wrap-border wrap-border-right"></div>
-        </div>
+        </div> -->
         <div class="wrap-main">
             <div class="lottery-wrap" id="lottery-wrap"></div>
         </div>
@@ -180,7 +176,7 @@
             <div class="cirle-btn award" id="award-2" data-award="2">一</div>
             <div class="cirle-btn award" id="award-3" data-award="3">二</div>
             <div class="cirle-btn award" id="award-4" data-award="4">三</div>
-            <div class="btn btn-red-outline lottery-btn" id="lottery-btn" data-award="">开始抽奖</div>
+            <div class="btn btn-red-outline lottery-btn bact" id="lottery-btn" data-award="">开始抽奖</div>
             <div class="cirle-btn award" id="award-5" data-award="5">四</div>
             <div class="cirle-btn award" id="award-6" data-award="6">五</div>
             <div class="cirle-btn award" id="award-7" data-award="7">惊</div>
@@ -201,12 +197,12 @@
             <img src="./img/avatar/<%= item.nameen %>.jpg" alt="<%= item.namezh %>">
         </div>
         <div class="f-l lottery-content">
-            <em class="beauty border-01"></em>
+            <!-- <em class="beauty border-01"></em>
             <em class="beauty border-02"></em>
             <em class="beauty border-03"></em>
             <em class="beauty border-04"></em>
             <div class="border bor-top"></div>
-            <div class="border bor-bottom"></div>
+            <div class="border bor-bottom"></div> -->
             <h3 class="content-title ddtitle"> <span class="lottery-name"><%= item.namezh %></span> &nbsp;&nbsp;<span class="company">[ <%= item.wish %> ]</span></h3>
             <!-- <div class="content-detail">
                 <b>新年愉快，万事如意！</b>
@@ -422,7 +418,7 @@
         isLock = true;
         // 设置抽奖按钮状态
         lottery_btn.text('正在滚动 ^_^');
-        lottery_btn.css('background', '#FFBFB7');
+        // lottery_btn.css('background', '#FFBFB7');
 
         setout_time = setTimeout(function () {
             speed = 15;
@@ -485,14 +481,14 @@
 //        $('#lottery-wrap').css('top', -stop_top);
 
         // 停止动画时要走的距离，即再走三个索引（即两个框+半个框的距离）
-        var left_distance = Math.floor(item_outer_height*1 + (item_outer_height - item_height));
+        var left_distance = Math.floor(item_outer_height*2 + (item_outer_height - item_height));
         var sure_index = stop_index + 4;
 
         // 移动到要到达的指定位置
         var lastStep = function() {
             time02 = nextFrame(function() {
-                // top -= 2;
-                // moveDom.style.top = (-stop_top + top) + 'px';
+                top -= 8;
+                moveDom.style.top = (-stop_top + top) + 'px';
                 if (-top <= left_distance) {
                     lastStep();
                 } else {

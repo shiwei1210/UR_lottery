@@ -68,7 +68,7 @@ html {
 body {
     height: 100%;
     /*background: #FFF7E3;*/
-    background: url("../img/bg1.png") repeat;
+    background: url("../img/bg2.png") repeat;
     background-size: 100% 100%;
     /* background: url("../img/yunwen.jpg") repeat; */
     /*background: #fff;*/
@@ -343,9 +343,9 @@ aside .switch {
 }
 .wrap-main {
     position: relative;
-    top: 2%;
+    top: 21%;
     /*height: 640px*/
-    height: 71%;
+    height: 64%;
     overflow: hidden;
     /*border: 3px solid #CB141D;*/
 }
@@ -356,8 +356,8 @@ aside .switch {
 }
 
 #lottery-wrap .sure-active {
-    border-top: 5px solid #CB141D;
-    border-bottom: 5px solid #CB141D;
+    /* border-top: 5px solid #CB141D;
+    border-bottom: 5px solid #CB141D; */
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -ms-transition: all 1s;
@@ -372,9 +372,9 @@ aside .switch {
     width: 100%;
 }
 .lottery-avatar {
-    height: 50px;
-    width: 50px;
-    margin-left: 8rem;
+    height: 80px;
+    width: 80px;
+    margin-left: 11rem;
     margin-top: 1rem;
     -webkit-border-radius: 90px;
     -moz-border-radius: 90px;
@@ -387,32 +387,31 @@ aside .switch {
     box-shadow: 0 0 0 4px white, inset 0 0 0 1px rgba(254,54,31,0.2), 0 0 0 8px rgba(254,54,31,0.9);
 }
 .lottery-avatar img {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
 }
 .lottery-content {
     position: relative;
-    margin-left: 3rem;
-    padding: 2rem;
+    margin-left: 2rem;
     width: 65%;
-    height: 2rem;
+    height: 9rem;
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
     transition: all .4s;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px 1px rgba(60,141,188,0.2);
+    /* box-shadow: 0px 0px 5px 1px rgba(60,141,188,0.2); */
     /*background: #FE351E;*/
-    background: rgba(255,255,255,0.8);
+    /* background: rgba(255,255,255,0.8); */
     /*border: 2px solid #FD361F;*/
     /*border:15px solid transparent;*/
     /*-moz-border-image:url(../img/china-border.png) 30 30 stretch;	!* Old Firefox *!*/
     /*-webkit-border-image:url(../img/china-border.png) 30 30 stretch;	!* Safari and Chrome *!*/
     /*-o-border-image:url(../img/china-border.png) 30 30 stretch;		!* Opera *!*/
     /*border-image:url(../img/china-border.png) 30 30 stretch;*/
-    /*background: url("../img/border.png") no-repeat;*/
-    /*background-size: cover;*/
+    background: url("../img/bgk.png") no-repeat;
+    background-size: 100% 100%;
 }
 .lottery-content .beauty {
     position: absolute;
@@ -446,24 +445,24 @@ aside .switch {
     background-size: contain;
 }
 .lottery-content:before {
-    content: "";
+    /* content: "";
     display: block;
     position: absolute;
     left: -20px;
     right: auto;
     top: 40%;
     border: 10px solid transparent;
-    border-right-color: #FD361F;
+    border-right-color: #FD361F; */
 }
 .lottery-content:after {
-    content: "";
+    /* content: "";
     display: block;
     position: absolute;
     top: 40%;
     left: -17px;
     right: auto;
     border: 10px solid transparent;
-    border-right-color: #fff;
+    border-right-color: #fff; */
 }
 
 .lottery-content .content-title  {
@@ -472,14 +471,15 @@ aside .switch {
 }
 .lottery-content .content-title .lottery-name {
     font-size: 2.5rem;
-    color: #2980b9;
+    color: #fff;
     font-weight: bold;
+    line-height: 9rem;
     font-family: 'STKaiti', 'KaiTi ';
 }
 .lottery-content .content-title .company {
-    font-size: 1.4rem;
+    font-size: 2.5rem;
     font-weight: 500;
-    color: #3498db;
+    color: #fff;
     font-family: '微软雅黑', sans-serif, arial;
 }
 .lottery-content .content-detail b {
@@ -496,8 +496,10 @@ aside .switch {
 }
 
 .dashboard {
-    position: relative;
+    position: fixed;
     margin: 4.5rem auto 0 auto;
+    bottom: 40px;
+    width: 54%;
     text-align: center;
 }
 .btn {
@@ -531,6 +533,7 @@ aside .switch {
     width: 15%;
     margin: 0 auto;
     padding: 1rem 1.6rem;
+    margin-left: 5.7%;
     cursor: pointer;
     font-size: 2rem;
     font-family: 'STKaiti', 'KaiTi ';
@@ -554,19 +557,21 @@ aside .switch {
 .dashboard .cirle-btn {
     position: absolute;
     display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    color: #FD361F;
+    width: 4rem;
+    height: 4rem;
+    color: #c03dff;
     padding: 0.5rem;
+    background: #fff;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    line-height: 4rem;
     font-weight: 800;
-    font-family: 'STKaiti', 'KaiTi ';
-    border: 3px solid #FD361F;
+    font-family: '[STXingkai]';
+    border: 2px solid #c03dff;
     border-radius: 100%;
     -webkit-box-shadow: 0 5px rgba(253, 54, 31, 0.5);
     -moz-box-shadow: 0 5px rgba(253, 54, 31, 0.5);
-    box-shadow: 0 5px rgba(253, 54, 31, 0.5);
+    box-shadow: 0 0 10px 5px rgba(234, 31, 253, 0.5);
 }
 .dashboard .cirle-btn:nth-child(1) {
     left: 5%;
@@ -584,18 +589,26 @@ aside .switch {
     left: 45%;
 }
 .dashboard .cirle-btn:nth-child(6) {
-    left: 60%;
+    left: 65%;
 }
 .dashboard .cirle-btn:nth-child(7) {
-    left: 70%;
+    left: 75%;
 }
 .dashboard .cirle-btn:nth-child(8) {
-    left: 80%;
+    left: 85%;
 }
 .award-active {
-    background: #ffbfb7;
+    background: #c03dff !important;
+    color: #fff !important;
 }
-
+.bact{
+    color: #fff;
+    background: url("../img/gogo.png") no-repeat;
+    background-size: 100% 100%;
+    margin: 0 20px;
+    height: 45px;
+    line-height: 45px;
+}
 .close {
     float: right;
     font-size: 21px;
